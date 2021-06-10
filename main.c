@@ -2,7 +2,13 @@
 
 int main()
 {
-    printf("Hola Mundo");
+    char nombre[100];
+    printf("Hola Mundo\n");
+    fflush(stdin);
+    printf("Nombre: ");
+    fgets(nombre, sizeof(nombre), stdin);
+    printf("Hola %s", nombre);
+
 
     return 0;
 }
